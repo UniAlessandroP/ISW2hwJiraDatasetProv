@@ -47,7 +47,7 @@
   
   
   <build>
-    <sourceDirectory>src/jiraticketsmanager</sourceDirectory>
+    <sourceDirectory>src/main</sourceDirectory>
     <testSourceDirectory>src/test</testSourceDirectory>
     <plugins>
       <plugin>

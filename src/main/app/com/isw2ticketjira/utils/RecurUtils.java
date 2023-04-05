@@ -1,14 +1,14 @@
-package jiraticketsmanager.utils;
+package app.com.isw2ticketjira.utils;
 
 public class RecurUtils {
 
     public static boolean isInteger(String s) {
-        try{
+        try {
             Integer.parseInt(s);
             return true;
-        }catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             return false;
         }
-        
+
     }
 }

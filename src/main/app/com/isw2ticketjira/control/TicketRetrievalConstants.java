@@ -1,12 +1,12 @@
-package jiraticketsmanager.control;
+package app.com.isw2ticketjira.control;
 
 public class TicketRetrievalConstants {
-    
+
     private TicketRetrievalConstants() {
         // No need to instantiate the class, we can hide its constructor
     }
-    
-    //Url generation specific constants
+
+    // Url generation specific constants
     public static final String JIRA_BASE_URL = "https://issues.apache.org/jira/rest/api/2/";
     public static final String D_Q = "%22";
     public static final String QUERYSTART_COMPONENT = "search?jql=";
@@ -22,6 +22,5 @@ public class TicketRetrievalConstants {
     public static final String STARTAT_CLAUSE = "&startAt=";
     public static final String MAXRES_CLAUSE = "&maxResults=";
     public static final String FIELDS_CLAUSE = "&fields=issuetype,status,key,resolutiondate,versions,created";
-            
-    
+
 }

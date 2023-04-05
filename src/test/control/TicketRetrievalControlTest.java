@@ -1,4 +1,4 @@
-package test.control;
+package control;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,8 +7,8 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import jiraticketsmanager.control.TicketRetrievalControl;
-import jiraticketsmanager.entity.Ticket;
+import app.com.isw2ticketjira.control.TicketRetrievalControl;
+import app.com.isw2ticketjira.entity.Ticket;
 
 class TicketRetrievalControlTest {
     private static TicketRetrievalControl trc;
