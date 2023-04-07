@@ -71,8 +71,12 @@ public class TicketRetrievalControl {
             try {
                 json = NetUtils.getJsonFromUrl(url);
             } catch (JSONException | IOException e) {
-                e.printStackTrace();
-                break;
+                String[] msgl = e.getMessage().split(":");
+                if(msgl.length < 2 || !msgl[1].contains("400")) {
+                    Thread.dumpStack();
+                    throw new UnknownError(e.getMessage());
+                }
+                throw new RuntimeException("Error 400. Bad Request.");
             }
 
             JSONArray issues = json.getJSONArray("issues");

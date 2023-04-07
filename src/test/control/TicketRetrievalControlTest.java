@@ -38,8 +38,10 @@ class TicketRetrievalControlTest {
         
 
         for(String proj : wrongprojnames) {
-            List<Ticket> tks = trc.retrieveTickets(proj);
-            assertEquals(null, tks);
+            Throwable exception = assertThrows(RuntimeException.class,()->{
+                trc.retrieveTickets(proj);
+            });
+            assertEquals(exception.getMessage().contains("Error 400"), true);
         }
     }
 
