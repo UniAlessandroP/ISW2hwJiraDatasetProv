@@ -1,7 +1,7 @@
-package app.com.isw2ticketjira;
+package app.com.isw2dsprov;
 
-import app.com.isw2ticketjira.control.TicketRetrievalControl;
-import app.com.isw2ticketjira.entity.Ticket;
+import app.com.isw2dsprov.control.TicketRetrievalControl;
+import app.com.isw2dsprov.entity.Ticket;
 
 public class Main {
 

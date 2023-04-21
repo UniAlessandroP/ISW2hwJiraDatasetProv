@@ -1,4 +1,4 @@
-package app.com.isw2ticketjira.control;
+package app.com.isw2dsprov.control;
 
 public class TicketRetrievalConstants {
 

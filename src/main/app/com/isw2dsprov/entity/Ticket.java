@@ -1,6 +1,6 @@
-package app.com.isw2ticketjira.entity;
+package app.com.isw2dsprov.entity;
 
-import app.com.isw2ticketjira.utils.RecurUtils;
+import app.com.isw2dsprov.utils.RecurUtils;
 
 public class Ticket {
     private String projectName;

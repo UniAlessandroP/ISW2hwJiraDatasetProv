@@ -1,6 +1,6 @@
-package app.com.isw2ticketjira.control;
+package app.com.isw2dsprov.control;
 
-import static app.com.isw2ticketjira.control.TicketRetrievalConstants.*;
+import static app.com.isw2dsprov.control.TicketRetrievalConstants.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import app.com.isw2ticketjira.entity.Ticket;
-import app.com.isw2ticketjira.utils.NetUtils;
+import app.com.isw2dsprov.entity.Ticket;
+import app.com.isw2dsprov.utils.NetUtils;
 
 public class TicketRetrievalControl {
 

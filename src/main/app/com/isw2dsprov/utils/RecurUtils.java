@@ -1,4 +1,4 @@
-package app.com.isw2ticketjira.utils;
+package app.com.isw2dsprov.utils;
 
 public class RecurUtils {
 

@@ -7,8 +7,8 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import app.com.isw2ticketjira.control.TicketRetrievalControl;
-import app.com.isw2ticketjira.entity.Ticket;
+import app.com.isw2dsprov.control.TicketRetrievalControl;
+import app.com.isw2dsprov.entity.Ticket;
 
 class TicketRetrievalControlTest {
     private static TicketRetrievalControl trc;
