@@ -139,3 +139,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,eclipse,java,maven
+
+# project specific ignore fields
+repo/*
+
+# End of project specifi ignore fields
