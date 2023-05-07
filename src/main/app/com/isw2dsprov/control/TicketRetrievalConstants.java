@@ -21,6 +21,10 @@ public class TicketRetrievalConstants {
     public static final String RESOLUTION_CLAUSE = D_Q + "resolution" + D_Q + EQU_C;
     public static final String STARTAT_CLAUSE = "&startAt=";
     public static final String MAXRES_CLAUSE = "&maxResults=";
-    public static final String FIELDS_CLAUSE = "&fields=issuetype,status,key,resolutiondate,versions,created";
+    public static final String FIX_VER_FIELD = "fixVersions";
+    public static final String AFFECTED_VER_FIELD = "versions";
+    
+    public static final String FIELDS_CLAUSE = "&fields=issuetype,status,key,resolutiondate," +
+    											AFFECTED_VER_FIELD + "," + FIX_VER_FIELD + ",created";
 
 }

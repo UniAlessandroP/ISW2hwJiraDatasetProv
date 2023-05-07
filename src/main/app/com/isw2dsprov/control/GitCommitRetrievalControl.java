@@ -68,7 +68,7 @@ public class GitCommitRetrievalControl {
 			    RevCommit commit = walk.parseCommit(head.getObjectId());
 	
 			    while (commit != null) {
-			    	cl.add(new Commit(commit));
+			    	cl.add(new Commit(commit, prjn));
 	
 			        commit = commit.getParentCount() > 0 ? walk.parseCommit(commit.getParent(0).getId()) : null;
 			    }
@@ -166,5 +166,9 @@ public class GitCommitRetrievalControl {
 		GitCommitRetrievalControl gcrc = new GitCommitRetrievalControl(projname, url, token);
 		gcrc.retrieveCommits();
 		gcrc.printCommitsInfo();
+	}
+
+	public List<Commit> getCommitList() {
+		return this.cl;
 	}
 }
